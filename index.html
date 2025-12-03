@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>viettel-academy-app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- External libs used by Viewer (pdf.js, mammoth, PPTX, jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";</script>
+    <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/meshesha/PPTXjs/js/pptxjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/meshesha/PPTXjs/js/pptxjsUI.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
