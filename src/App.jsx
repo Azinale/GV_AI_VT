@@ -13,7 +13,7 @@ import { QrPopup, KahootPopup, VideoPopup } from './components/Popups';
 import HeyGenAvatar from './components/HeyGenAvatar'; 
 
 // ✅ Import ảnh background cho TRANG BÌA
-import bgImage from './assets/anhnen.png';
+import bgImage from './assets/Background.pptx.jpg';
 import pdf5 from './assets/5-Buoc-Hoc-Tap-Cung-Giao-Su-AI.pdf';
 import pdf4 from './assets/cauchuyen.pdf';
 
