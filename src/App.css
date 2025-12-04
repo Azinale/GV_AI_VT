@@ -8,8 +8,8 @@ body {
 
 /* Root full màn hình, không max-width, không padding */
 #root {
-  min-height: 100vh;
-  width: 100vw;
+  min-height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }

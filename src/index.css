@@ -18,11 +18,11 @@
   --transition-medium: all 320ms ease;
 }
 .fullscreen-cover {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   margin: 0;
   padding: 0;
-
+  /* padding-top: 100px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

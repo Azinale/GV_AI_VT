@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-empty */
 import React, { useEffect, useState, useRef, useCallback } from 'react';
+import fullscreenLogo from '../assets/fullscrrenLogo2.png';
 
 const HeyGenAvatar = () => {
   const defaultSize = { width: 280, height: 380 };
@@ -449,6 +450,20 @@ const HeyGenAvatar = () => {
           border-color: #ED1B2E;
         }
 
+        /* Fullscreen: small branding logo in bottom-right */
+        .heygen-fullscreen-logo {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 250px;
+          height: 100px;
+          z-index: 2147483651;
+          pointer-events: none;
+          filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45));
+          border-radius: 10px;
+          background: rgba(255,255,255,0.02);
+        }
+
         /* Ẩn nút fullscreen khi đang thu nhỏ (hình tròn) */
         .heygen-widget-wrapper:not(.expand) .heygen-fullscreen-btn {
           display: none;
@@ -501,6 +516,15 @@ const HeyGenAvatar = () => {
         >
           {isFullscreen ? '✖' : '⛶'}
         </button>
+
+        {isFullscreen && (
+          <img
+            src={fullscreenLogo}
+            alt="Logo"
+            className="heygen-fullscreen-logo"
+            aria-hidden="true"
+          />
+        )}
 
         {/* (Aspect ratio lock removed) */}
 
